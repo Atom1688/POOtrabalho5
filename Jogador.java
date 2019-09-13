@@ -1,17 +1,16 @@
 package nivel1;
 
 public class Jogador {
-    public String nome;
-    private int score;
+    private String nome;
+    protected int score;
 
     public Jogador(String nome, int score){
         this.nome = nome;
         this.score = score;
     }
 
-    void print(){
-        System.out.println(nome);
-        System.out.println(score);
+    public void imprimir(){
+        System.out.println(this.nome + "score = " + this.score);
     }
 }
 
